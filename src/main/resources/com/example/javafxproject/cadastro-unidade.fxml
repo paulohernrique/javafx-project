@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+fx:controller="com.example.javafxproject.CadastroUnidadeController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox alignment="CENTER" spacing="20.0">
+        <Label text="Cadastro Unidade" />
+        <Label text="Utilize o formulário abaixo para realizar o registro da unidade" />
+    </VBox>
+
+    <Label text="Nome da versão" />
+    <TextField fx:id="txfVersao" />
+
+    <Label text="Transmissão" />
+    <TextField fx:id="txfTransmissao" />
+
+    <Label text="Cor" />
+    <TextField fx:id="txfCor" />
+
+    <Label text="Ano" />
+    <TextField fx:id="txfAno" />
+
+    <Label text="Quilometragem" />
+    <TextField fx:id="txfQuilometragem" />
+
+    <Label text="Placa" />
+    <TextField fx:id="txfPlaca" />
+
+    <Label text="Valor Unitário" />
+    <TextField fx:id="txfValorUnitario" />
+
+    <VBox alignment="CENTER_RIGHT" spacing="20.0">
+        <Button text="Registrar" onAction="#onActionRegistrar" />
+    </VBox>
+</VBox>
